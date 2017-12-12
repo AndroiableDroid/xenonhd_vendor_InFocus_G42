@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!--level 1: dev model-->
+<devmodel name="G42">
+  <!--level 2: HW model-->
+  <hwid name="common">
+	    <delete srcpath="/data/nvram/APCFG/APRDCL/CAMERA_SHADING"> </delete>
+      <delete srcpath="/data/nvram/APCFG/APRDCL/CAMERA_VERSION"> </delete>
+      <delete srcpath="/data/nvram/APCFG/APRDCL/CAMERA_PARA"> </delete>
+      <setprop key="ro.product.locale" value=""> </setprop>
+      <setprop key="sys.settings.msg.received" value="0"> </setprop>	
+      <setprop key="ro.product.first_api_level" value="22"> </setprop>
+      <setprop key="qemu.hw.mainkeys" value="1"> </setprop>		
+	</hwid>  
+  <hwid name="default">
+      <!--level 3: SKUID-->
+		  <skuid name="common">
+	        <setprop key="ro.fih.navigation_bar_display" value="1"> </setprop>
+	        <setprop key="ro.product.first_api_level" value="22"> </setprop>
+	    </skuid>  
+	    <skuid name="default">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	    </skuid>  
+	    <skuid name="100IN">
+	        <copy srcpath="/system/etc/audio_parameter/100IN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	    </skuid>
+	    <skuid name="100TW">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        	
+	    </skuid>
+	    <skuid name="100CN">
+	        <copy srcpath="/system/etc/audio_parameter/100CN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	       
+	    </skuid>
+  </hwid>
+  <hwid name="G48">
+      <!--level 3: SKUID-->
+		  <skuid name="common">
+	        <setprop key="ro.fih.navigation_bar_display" value="1"> </setprop>
+	        <setprop key="ro.product.nickname" value="M535+"> </setprop>
+	    </skuid>  
+	    <skuid name="default">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	    </skuid>  
+	    <skuid name="100IN">
+	        <copy srcpath="/system/etc/audio_parameter/100IN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	    </skuid>
+	    <skuid name="100TW">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	        	</skuid>
+	    <skuid name="100CN">
+	        <copy srcpath="/system/etc/audio_parameter/100CN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	       
+	    </skuid>
+  </hwid>
+</devmodel>
+<devmodel name="default">
+  <!--level 2: HW model-->
+  <hwid name="common">
+	    <delete srcpath="/data/nvram/APCFG/APRDCL/CAMERA_SHADING"> </delete>
+      <delete srcpath="/data/nvram/APCFG/APRDCL/CAMERA_VERSION"> </delete>
+      <delete srcpath="/data/nvram/APCFG/APRDCL/CAMERA_PARA"> </delete>
+      <setprop key="ro.product.locale" value=""> </setprop>
+      <setprop key="sys.settings.msg.received" value="0"> </setprop>		
+	</hwid>  
+  <hwid name="default">
+      <!--level 3: SKUID-->
+		  <skuid name="common">
+	        <setprop key="ro.fih.navigation_bar_display" value="1"> </setprop>
+	    </skuid>  
+	    <skuid name="default">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	    </skuid>  
+	    <skuid name="100IN">
+	        <copy srcpath="/system/etc/audio_parameter/100IN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        	
+	    </skuid>
+	    <skuid name="100TW">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	        	</skuid>
+	    <skuid name="100CN">
+	        <copy srcpath="/system/etc/audio_parameter/100CN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	      
+	    </skuid>
+  </hwid>
+  <hwid name="G48">
+      <!--level 3: SKUID-->
+		  <skuid name="common">
+	        <setprop key="ro.fih.navigation_bar_display" value="1"> </setprop>
+	        <setprop key="ro.product.nickname" value="M535+"> </setprop>
+	    </skuid>  
+	    <skuid name="default">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	     
+	    </skuid>  
+	    <skuid name="100IN">
+	        <copy srcpath="/system/etc/audio_parameter/100IN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	        
+	    </skuid>
+	    <skuid name="100TW">
+	        <copy srcpath="/system/etc/audio_parameter/100TW/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	       
+	        	</skuid>
+	    <skuid name="100CN">
+	        <copy srcpath="/system/etc/audio_parameter/100CN/*.bin" despath="/hidden/data/audio_parameter/"> </copy>
+	      
+	    </skuid>
+  </hwid>
+</devmodel>
